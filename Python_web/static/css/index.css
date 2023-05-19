@@ -1,0 +1,224 @@
+
+
+/*Phần Chính*/
+html body{
+  height: 100%;
+  width: 100%;
+  min-width: 15cm;
+  background-color: #edfdff;
+}
+/*Tiêu Đề*/
+#title{
+  -webkit-text-stroke: 0.07cm #06060c;
+  background-color: #ffffff;
+  color: #fff;
+  min-height: 3cm;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border:3px solid #d9fadd;
+  border-radius: 0.2cm;
+  
+}
+#title div{
+  font-size: 5em;
+}
+
+/*Ảnh đầu vào*/
+#image_input_left{
+  height: 21cm;
+}
+
+#image_input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1cm;
+  margin: 0.1cm;
+  position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  background-color: #1b83f986;
+  color: white; 
+  padding: 20px;
+  border:3px solid #aaf0bed4;
+  border-radius: 0.2cm;
+}
+
+#option_intput{
+  display: center;
+  align-items: center;
+  background-color: #f5f5cd;
+  min-height: 1.5cm;
+  height: 52em;
+  margin: 0.5cm;
+  max-height: 19cm;
+  min-width: 4cm;
+  max-width: 100%;
+  float: left;
+  position: absolute;
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  
+  border-radius: 2rem;
+}
+
+#Show_image_input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1.5cm;
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 0.4cm;
+  overflow: hidden;
+  border: 3px dashed #919191;
+}
+
+#display_image{
+  max-width: 40cm;
+  max-height: 40cm;
+}
+
+/*Ảnh đầu ra*/
+#image_output_left{
+  height: 21cm;
+}
+
+#image_output{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1cm;
+  margin: 0.1cm;
+  position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  
+
+  background-color: #1b83f986;
+  color: white; 
+  padding: 20px;
+  border:3px solid #aaf0bed4;
+  border-radius: 0.2cm;
+}
+
+#option_output{
+  display: center;
+  align-items: center;
+  background-color: #f5f5cd;
+  min-height: 1.5cm;
+  height: 52em;
+  margin: 0.5cm;
+  max-height: 19cm;
+  min-width: 4cm;
+  max-width: 100%;
+  float: left;
+  position: absolute;
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  border-radius: 2rem;
+  
+}
+
+#show_output_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1.5cm; /* Đặt khoảng cách với phần trên của trang là 0 */
+  bottom: 0; /* Đặt khoảng cách với phần dưới của trang là 0 */
+  left: 0; /* Đặt khoảng cách với phần trái của trang là 0 */
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 0.4cm;
+  overflow: hidden;
+  border: 3px dashed  #919191;
+}
+
+/*Tat ca nut*/
+.upload_button, #form{
+  display: inline-block;
+  margin-right: 10px;
+  margin: 0.25cm;
+  float: left;
+  
+  
+}
+
+/*Footer*/
+#footer{
+  height: auto;
+  background-color: #92e6f5;
+  border-radius: 0.2cm;
+}
+
+#logo_iuh{
+  height: 4cm;
+  
+}
+
+#license{
+  background-color: #9192ff;
+  text-align: center;
+  color: #503131;
+}
+
+#license_content{
+  margin-top: 0.5em;
+}
+
+#contact{
+  
+  align-content: center;
+  text-align: left;
+}
+
+/*Sử lý*/
+
+#loader{
+  position: absolute;
+  border: 4px solid #f3f3f3; /* Màu viền */
+  border-top: 4px solid #3498db; /* Màu đỉnh loader */
+  border-radius: 50%; /* Hình tròn */
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite; /* Tạo hiệu ứng xoay vô tận */
+  display: none; /* Ẩn ban đầu */
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (min-width: 768px) {
+  .row.no-gutters [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
