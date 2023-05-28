@@ -22,8 +22,8 @@ for i=1:num_rmrf
     I = im2double(imread(path));
 
     %%Mặc định
-    %[H W D] = size(I_resize);
-    %[LB LR time] = septRelSmo(I_resize, 50, zeros(H,W,D), I_resize);
+    %[H W D] = size(I);
+    %[LB LR time] = septRelSmo(I, 50, zeros(H,W,D), I);
 
     %%Áp dụng phương pháp cải thiện thứ nhất
     %x = size(I);
@@ -52,8 +52,8 @@ for i=1:num_rmrf
     
     
     
-    imwrite(LB,"results_both/LB_"+num2str(i)+".png");
-    imwrite(LR,"results_both/LR_"+num2str(i)+".png");
+    imwrite(LB,"results_both_optimization/LB_"+num2str(i)+".png");
+    imwrite(LR,"results_both_optimization/LR_"+num2str(i)+".png");
 
 end
 

@@ -1,3 +1,20 @@
+Relative smoothness
+***************************************************************************************
+** Demo code for "Single Image Layer Separation using Relative Smoothness" (CVPR 2014)
+** by Yu Li (liyu@nus.edu.sg)
+***************************************************************************************
+
+
+If you use/adapt our code/data in your work, please appropriately cite our CVPR 2014 paper.
+
+
+***************************************************************************************
+***************************************************************************************
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ghosting cues
+
 Code accompanying the paper: Reflection Removal using Ghosting Cues (CVPR 2015). This code is only provided for research purposes. Please contact the authors for any commercial implementation.
 
 Contact YiChang Shih (yichangshih@gmail.com) or Dilip Krishnan (dilipkay@google.com) for any questions.

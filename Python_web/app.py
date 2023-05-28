@@ -3,14 +3,14 @@ from PIL import Image,ImageEnhance
 import io as ib
 import numpy as np
 import cv2
-from SIRR import SIRR
+from SIRR import SIRR, SIRRImprove
 import base64
 
 #Tăng độ sáng cho ảnh đã tách phản chiếu 
 def brightness_filter(image):
     img = Image.fromarray(np.uint8(image*255))
     curr_bri = ImageEnhance.Brightness(img)
-    new_bri = 1.2
+    new_bri = 1.5
     img_brightened = curr_bri.enhance(new_bri)
     return img_brightened
 
@@ -26,7 +26,7 @@ def index():
 		# Áp dụng SIRR
 		T,R = SIRR(img_input,10)
 		#Tăng độ sáng 
-		img_output = brightness_filter(T)
+		img_output = brightness_filter(R)
 		#Lưu ảnh vào bộ nhớ đệm
 		buffered = ib.BytesIO()
 		img_output.save(buffered, format='JPEG')
