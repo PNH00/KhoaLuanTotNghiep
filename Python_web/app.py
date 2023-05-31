@@ -26,7 +26,7 @@ def index():
 		# Áp dụng SIRR
 		T,R = SIRR(img_input,10)
 		#Tăng độ sáng 
-		img_output = brightness_filter(R)
+		img_output = brightness_filter(T)
 		#Lưu ảnh vào bộ nhớ đệm
 		buffered = ib.BytesIO()
 		img_output.save(buffered, format='JPEG')
